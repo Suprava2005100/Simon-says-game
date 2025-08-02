@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon says game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Simon Says Game</h1>
+        <h2>Press any key or Start button to start the game</h2>
+        <button id="start-btn">Start Game</button>
+        
+        <div class="score-container">
+            <div class="score-box">
+                <div class="score-label">CURRENT LEVEL</div>
+                <div class="score-value" id="current-level">0</div>
+            </div>
+            <div class="score-box">
+                <div class="score-label">HIGHEST SCORE</div>
+                <div class="score-value" id="highest-score">0</div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <div class="line-one">
+                <div class="btn red" type="button" id="red">1</div>
+                <div class="btn yellow" type="button" id="yellow">2</div>
+            </div>
+            <div class="line-two">
+                <div class="btn green" type="button" id="green">3</div>
+                <div class="btn purple" type="button" id="purple">4</div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <p>Watch the sequence of colors that light up, then repeat the sequence by clicking the buttons in the same order. Each level adds one more color to remember. Good luck!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
